@@ -1,20 +1,34 @@
-# 🚀 React Vite Tailwind Starter
+# 🚀 React Vite Tailwind Typescript Starter Deluxe
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Redux Toolkit](https://img.shields.io/badge/-Redux%20Toolkit-764ABC?style=flat-square&logo=redux&logoColor=white)
+![React Router](https://img.shields.io/badge/-React%20Router-CA4245?style=flat-square&logo=react-router&logoColor=white)
 
-A lightning-fast ⚡ starter template for building modern React applications with Vite and Tailwind CSS.
+A supercharged ⚡ starter template for building modern, scalable React applications with Vite, Tailwind CSS, TypeScript, and a suite of powerful tools and libraries.
 
 ## 🌟 Features
 
-- ⚛️ React 18
-- 🛠️ Vite 4
-- 🎨 Tailwind CSS 3
-- 📏 ESLint & Prettier
-- 📁 Opinionated folder structure
-- 🔐 Environment variables support
-- 🚀 Fast refresh
+- ⚛️ React 18 with hooks for efficient UI development
+- 🛠️ Vite 4 for lightning-fast builds and hot module replacement
+- 🎨 Tailwind CSS 3 for utility-first styling
+- 🧰 TypeScript for enhanced type safety and developer experience
+- 🔄 Redux Toolkit & Zustand for flexible state management
+- 🧭 React Router for seamless navigation
+- 📝 React Hook Form for efficient form handling
+- 🌐 Axios for streamlined API requests
+- 📅 date-fns for powerful date manipulation
+- 🧩 Chakra UI & Material-UI for flexible component libraries
+- 🎭 React Icons for a vast selection of customizable icons
+- 🧪 Jest and React Testing Library for robust testing
+- 📚 Storybook for isolated component development
+- 🐶 Husky & lint-staged for pre-commit code quality checks
+- 📏 ESLint & Prettier for consistent code style
+- 🌿 dotenv for secure environment variable management
+- 📁 Opinionated folder structure for scalability
+- 🚀 Fast refresh for quick development iterations
 - 📱 Responsive design ready
 
 ## 🚀 Quick Start
@@ -27,12 +41,14 @@ A lightning-fast ⚡ starter template for building modern React applications wit
 ### Setting Up Your Project
 
 1. Clone this repository:
+
    ```bash
-   git clone https://github.com/timataliatov/RVNT-tt-01.git your-project-name
+   git clone https://github.com/yourusername/your-project-name.git
    cd your-project-name
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -40,12 +56,15 @@ A lightning-fast ⚡ starter template for building modern React applications wit
    ```
 
 3. Set up your environment variables:
+
    ```bash
    cp .env.example .env
    ```
-   Edit the `.env` file as needed.
+
+   Edit the `.env` file with your specific configuration.
 
 4. Start the development server:
+
    ```bash
    npm run dev
    # or
@@ -56,94 +75,143 @@ A lightning-fast ⚡ starter template for building modern React applications wit
 
 ## 📚 Available Scripts
 
-In the project directory, you can run:
+- `npm run dev`: Start the development server
+- `npm run build`: Build the app for production
+- `npm run preview`: Preview the production build locally
+- `npm run lint`: Run ESLint to catch linting errors
+- `npm run format`: Format code with Prettier
+- `npm test`: Run Jest tests
+- `npm run storybook`: Start Storybook for component development
+- `npm run build-storybook`: Build Storybook for deployment
 
-- `npm run dev` - Starts the development server
-- `npm run build` - Builds the app for production
-- `npm run preview` - Previews the production build locally
-- `npm run lint` - Runs ESLint to catch linting errors
-- `npm run format` - Formats code with Prettier
-
-## 📂 Folder Structure
+## 📂 Enhanced Folder Structure
 
 ```
 react-vite-tailwind-starter/
+├── .storybook/          # Storybook configuration
 ├── public/              # Static files
-├── src/                 # Source files
+├── src/
 │   ├── components/      # Reusable components
 │   ├── pages/           # Page components
+│   ├── hooks/           # Custom React hooks
+│   ├── services/        # API services
+│   ├── store/           # Redux store setup
+│   │   ├── slices/      # Redux slices
+│   │   └── index.ts     # Store configuration
 │   ├── styles/          # Global styles
+│   ├── types/           # TypeScript type definitions
 │   ├── utils/           # Utility functions
-│   ├── App.jsx          # Main App component
-│   └── main.jsx         # Entry point
+│   ├── App.tsx          # Main App component
+│   └── main.tsx         # Entry point
+├── tests/
+│   ├── unit/            # Unit tests
+│   └── integration/     # Integration tests
 ├── .eslintrc.json       # ESLint configuration
 ├── .gitignore           # Git ignore rules
 ├── .prettierrc          # Prettier configuration
 ├── index.html           # HTML entry point
+├── jest.config.js       # Jest configuration
 ├── package.json         # Project dependencies and scripts
 ├── postcss.config.js    # PostCSS configuration
 ├── README.md            # Project documentation (you are here!)
 ├── tailwind.config.js   # Tailwind CSS configuration
-└── vite.config.js       # Vite configuration
+├── tsconfig.json        # TypeScript configuration
+└── vite.config.ts       # Vite configuration
 ```
 
 ## 🧑‍💻 Development Workflow
 
-1. Create a new branch for your feature or bug fix:
+1. Create a feature branch:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-2. Make your changes and commit them:
+2. Develop and test your feature.
+
+3. Run linting and formatting:
+
+   ```bash
+   npm run lint
+   npm run format
+   ```
+
+4. Commit changes (Husky will run pre-commit hooks):
+
    ```bash
    git add .
    git commit -m "Add your meaningful commit message here"
    ```
 
-3. Push your changes to GitHub:
+5. Push your branch and create a Pull Request on GitHub.
+
+## 🔄 State Management
+
+This starter includes two popular state management solutions:
+
+1. **Redux Toolkit**: For complex, global state management.
+
+   - Located in `src/store/`
+   - Create slices in `src/store/slices/`
+   - Configure store in `src/store/index.ts`
+
+2. **Zustand**: For simpler, hook-based state management.
+   - Create stores in `src/store/zustand/`
+   - Use in components with `import { useYourStore } from 'src/store/zustand/yourStore'`
+
+Choose the one that best fits your project's needs!
+
+## 🎨 Styling and UI
+
+- **Tailwind CSS**: Customize your design system in `tailwind.config.js`
+- **Chakra UI**: Import and use components from `@chakra-ui/react`
+- **Material-UI**: Import and use components from `@mui/material`
+- **React Icons**: Import icons from `react-icons`, e.g., `import { FaReact } from 'react-icons/fa'`
+
+## 🧪 Testing
+
+- Write unit tests in the `tests/unit/` directory
+- Write integration tests in the `tests/integration/` directory
+- Run tests with `npm test`
+
+## 📚 Storybook
+
+- Develop components in isolation with Storybook
+- Write stories in `src/components/YourComponent/YourComponent.stories.tsx`
+- Run Storybook with `npm run storybook`
+
+## 🛠️ Configuration Files
+
+- **TypeScript**: Adjust compiler options in `tsconfig.json`
+- **Vite**: Modify build settings in `vite.config.ts`
+- **ESLint**: Customize linting rules in `.eslintrc.json`
+- **Prettier**: Adjust code formatting in `.prettierrc`
+- **Jest**: Configure testing in `jest.config.js`
+
+## 🔐 Environment Variables
+
+- Use `process.env.VITE_YOUR_VARIABLE` to access environment variables
+- Add new variables to both `.env` and `.env.example` (without real values)
+
+## 🚀 Deployment
+
+1. Build your project:
+
    ```bash
-   git push origin feature/your-feature-name
+   npm run build
    ```
 
-4. Create a Pull Request on GitHub for review.
-
-## 🔄 Keeping Your Project Updated
-
-To update your project with the latest changes from this starter:
-
-1. Add this repository as a remote:
-   ```bash
-   git remote add upstream https://github.com/timataliatov/RVNT-tt-01.git
-   ```
-
-2. Fetch the latest changes:
-   ```bash
-   git fetch upstream
-   ```
-
-3. Merge the changes into your main branch:
-   ```bash
-   git checkout main
-   git merge upstream/main
-   ```
-
-4. Resolve any conflicts and push the changes to your repository.
-
-## 🎨 Customization
-
-- **Tailwind**: Customize your Tailwind setup in `tailwind.config.js`
-- **Vite**: Modify Vite settings in `vite.config.js`
-- **ESLint & Prettier**: Adjust rules in `.eslintrc.json` and `.prettierrc`
+2. Deploy the `dist/` directory to your hosting platform of choice (Vercel, Netlify, etc.)
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We welcome contributions! Please follow these steps:
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a pull request
 
 ## 📜 License
 
@@ -154,13 +222,22 @@ This project is open source and available under the [MIT License](LICENSE).
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [React Router](https://reactrouter.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Axios](https://axios-http.com/)
+- [date-fns](https://date-fns.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Material-UI](https://mui.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Storybook](https://storybook.js.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 
 ---
 
-Happy coding! If you find this template helpful, please give it a ⭐️ on GitHub!
-
----
-
-- **!! WARNING !!**: Make sure to add your custom `.gitignore` and make sure to inclue original `.env` also!
+Happy coding! If you find this starter kit helpful, please give it a ⭐️ on GitHub!
