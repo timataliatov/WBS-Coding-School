@@ -43,7 +43,7 @@ A supercharged ⚡ starter template for building modern, scalable React applicat
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-project-name.git
+   git clone https://github.com/timataliatov/WBS-Coding-School.git
    cd your-project-name
    ```
 
@@ -51,8 +51,6 @@ A supercharged ⚡ starter template for building modern, scalable React applicat
 
    ```bash
    npm install
-   # or
-   yarn
    ```
 
 3. Set up your environment variables:
@@ -67,8 +65,6 @@ A supercharged ⚡ starter template for building modern, scalable React applicat
 
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
 5. Open your browser and visit `http://localhost:3000`. Happy coding! 🎉
@@ -213,10 +209,6 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch: `git push origin feature/AmazingFeature`
 5. Open a pull request
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🙏 Acknowledgments
 
 - [React](https://reactjs.org/)
@@ -241,3 +233,62 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Happy coding! If you find this starter kit helpful, please give it a ⭐️ on GitHub!
+
+---
+
+## 🌟 How to Use This Template
+
+1. Click the "Use this template" button at the top of this repository.
+2. Choose a name for your new repository and create it.
+3. Clone your new repository locally:
+   ```bash
+   git clone https://github.com/your-username/your-new-repo.git
+   cd your-new-repo
+   ```
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠 Customization and Next Steps
+
+After creating your project from this template:
+
+1. Update the `package.json` file:
+
+   - Change the `name` and `version` fields.
+   - Update the `description` and `author` fields.
+
+2. Configure environment variables:
+
+   - Copy `.env.example` to `.env` and fill in your project-specific values.
+
+3. Modify the `vite.config.ts` file if you need to adjust build settings.
+
+4. Update this README.md file to describe your specific project.
+
+5. Start building your components in the `src/components` directory.
+
+6. Create new pages in the `src/pages` directory and add them to your routing configuration.
+
+7. Customize the Tailwind configuration in `tailwind.config.js` to match your design system.
+
+8. Set up your state management solution (Redux or Zustand) based on your project needs.
+
+9. Write tests for your components and utilities.
+
+10. Set up Continuous Integration using the provided GitHub Actions workflow.
+
+Remember to commit your changes regularly and push to your repository!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check out the [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
